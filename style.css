@@ -109,6 +109,17 @@ nav{
   transition: 0.5s;
 }
 
+.container:hover .skills
+{
+  opacity: 0.05;
+}
+
+.container .skills:hover
+{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .container .skills:before{
   content: "";
   position: absolute;
