@@ -1,5 +1,6 @@
+
 window.onload = function()
-{
+{ 
     let progress = document.getElementById('scrollBar');
       let totalHeight = document.body.scrollHeight - window.innerHeight;
       window.onscroll = function()
@@ -8,14 +9,20 @@ window.onload = function()
       progress.style.height = progressHeight + "%";
       }
 
+      
+
+}
+
+var large = document.getElementsByClassName("box")
+large.onclick = function enlarge()
+{
+    $("div").click(function()
+{
+    $("div").animate({width:'250px'} ,{height:'200px'}, 5000);
+
+})
+
 }
 
 
-/*
-const progressBar = document.getElementsByClassName('progress-bar')[0]
-setInterval(() => {
-    const computedStyle = getComputedStyle(progressBar)
-    const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
-    progressBar.style.setProperty('--width',width + .01)
-}, 20)
-*/
+
