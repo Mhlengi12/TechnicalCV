@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="sricpt.js"></script>
+    <script src="app.js"></script>
     <body>
       <div id="scrollBar"></div>
       <div id="scrollPath"></div>
@@ -159,53 +160,80 @@
           <span style ="--i:3"></span>
         </div>
 
-        <div>
-          <h1 class="page-title">Projects</h1>
-            <ul id="portfolio">
-              <li>
-                <h3>Slide Puzzle</h3>
-                <p>A simple Slide puzzle game made using python,pygame, that keeps track of the amount of moves it takes to be solved. User can supply their own image for the puzzle</p>
-                <p>Programming language(s): <span class="highlight">Python</span></p>
-              </li>
-              <li>
-                <h3>Python Space program</h3>
-                <p>A classic alien invader game</p>
-                <p>Programming language(s): <span class="highlight">Python</span></p>
-              </li>
-              <li>
-                <h3>C# System Design</h3>
-                <p>A vehicle pruchasing system made in Visual Studio C#. The program is for customers to design and buy their own dream car from available franchise.</p>
-                <p>Programming language(s): <span class="highlight">C#</span></p>
-              </li>
-            </ul>
-        </div>
-    
+        <h1 class="page-title">Projects</h1>
 
-        <div class="container">
-          <div class="card">
-            <div class="card-image"></div>
-            <div class="card-text">
-              <span class="date">4 days ago</span>
-              <h2>Post One</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+        <div class="container" id="boxes">
+          <div class="box" class="prof">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                </div>
+                <div class="card-text">
+                  <p>
+                    <ul id="userRepos"></ul>
+                  </p>
+                </div>
+                <div class="card-stats">
+                  <div class="stat">
+                    <div class="value">Language(s):</div>
+                  </div>
+                  <div class="stat border">
+                    <div class="type">
+                      <p id="prog">hi</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-stats">
-              <div class="stat">
-                <div class="value">4<sup>m</sup></div>
-                <div class="type">read</div>
+          </div>
+
+          <div class="box" class="prof">
+            <div class="container">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <p>
+                    <ul id="userRepos1"></ul>
+                  </p>
+                </div>
+                <div class="card-stats">
+                  <div class="stat">
+                    <div class="value">Language(s):</div>
+                  </div>
+                  <div class="stat border">
+                    <div class="type">
+                      <p id="prog1"></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat border">
-                <div class="value">5123</div>
-                <div class="type">views</div>
-              </div>
-              <div class="stat">
-                <div class="value">32</div>
-                <div class="type">comments</div>
+            </div>
+          </div>
+
+          <div class="box" class="repo">
+            <div class="container">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                  <p>
+                    <ul id="userRepos2"></ul>
+                  </p>
+                </div>
+                <div class="card-stats">
+                  <div class="stat">
+                    <div class="value">Language(s):</div>
+                  </div>
+                  <div class="stat border">
+                    <div class="type">
+                      <p id="prog2">hi</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
 
     <footer>
       <p>Mhlengi Web Deisgn, Copyright &copy; 2020</p>
