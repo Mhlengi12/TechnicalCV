@@ -16,17 +16,6 @@ body{
   
 }
 
-/*
-body > #clipBg
-{
-  height:100%;
-  width: 100%;
-  background-color: #1c2c36;
-  clip-path: polygon(53% 0, 50% 80%,0 0,70% 50%, 50% 125%, 21% 21%);
-  position: absolute;
-  z-index: -1;
-}
-*/
 body > #clipBg2
 {
   height:100%;
@@ -37,15 +26,6 @@ body > #clipBg2
   z-index: -1;
 }
 
-/*
-//Change color of cv img
-body
-{
-  background-image: url(//photo.jpg);
-  background-color: #320941;
-  background-blend-mode: screen;
-}
-*/
 header > #clipBg
 {
   clip-path: polygon(0% 0, 100% 0,30% 10%, 0 50%, 0 21%);
@@ -68,7 +48,6 @@ nav{
   min-width: 500px;
 }
 
-
 /* Global */
 .container{
   width:80%;
@@ -79,7 +58,6 @@ nav{
 .container h2{
   color: whitesmoke;
 }
-
 
 .container .intro
 {
@@ -105,13 +83,13 @@ nav{
 }
 .container .intro:nth-child(2)
 {
-  transition-delay: 1s;
-  animation-delay: 1s;
+  opacity: 0;
+  animation-delay: 2s;
 }
 .container .intro:nth-child(3)
 {
-  transition-delay: 2s;
-  animation-delay: 2s;
+  opacity: 0;
+  animation-delay: 5s;
 }
 
 .container #boxes
@@ -127,7 +105,6 @@ nav{
 
 .container .box
 {
-  
   padding: 70px;
   display: grid;
   font-size: 20px;
@@ -159,71 +136,33 @@ nav{
   border-radius: 8px;
   overflow: hidden;
   border: 2px solid #000;
+}
 
-  
+textarea{
+  height: 100px;
 }
-/*
-.container .box span
-{
-  position: absolute;
-  display: block;
+
+
+input, textarea{
+  margin-bottom: 10px;
+  padding: 15px 10px 10px;
+  border-top: 1px solid #3BC0FF ;
+  border-bottom: 1px solid #3BC0FF ;
+  border-left: 1px solid #3BC0FF ;
+  border-right: 1px solid #3BC0FF ;
+  background-color: #042274 ;
+  border-radius: 5px;
+  width: 70%;
+  outline: none;
+  color: whitesmoke;
+
 }
-.container .box span:nth-child(1)
-{
-  top: 0;
-  left: -100%;
-  width:100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #39FF14);
+
+button{
+  background: linear-gradient(45deg, #3BC0FF, #33FF00);
+  border-radius: 30px;
+  margin: 10px 0px;
 }
-.container .box span:nth-child(1)
-{
-  left: 100%;
-  transition: 1s;
-}
-.container .box span:nth-child(3)
-{
-  bottom: 0;
-  left: -100%;
-  width:100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #39FF14);
-}
-.container .box span:nth-child(3)
-{
-  left: 100%;
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-.container .box span:nth-child(2)
-{
-  top: -100;
-  right: 0%;
-  width:2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #39FF14);
-}
-.container .box span:nth-child(2)
-{
-  top: 100%;
-  transition: 1s;
-  transition-delay: 0.25s;
-}
-.container .box span:nth-child(4)
-{
-  bottom: -100;
-  right: 0%;
-  width:2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #39FF14);
-}
-.container .box span:nth-child(4)
-{
-  bottom: 100%;
-  transition: 1s;
-  transition-delay: 0.75s;
-}
-*/
 
 .container .skills{
   position: relative;
@@ -301,7 +240,9 @@ nav{
   background: #fff;
   box-shadow: inset 0 0 2px #000;
   animation: animate2 4s ease-in-out forwards;
+  animation-delay: 10s;
 }
+
 @keyframes animate2
 {
   from
@@ -340,18 +281,9 @@ ul{
   padding:0;
 }
 
-.button_1{
-  height:38px;
-  background:#e8491d;
-  border:0;
-  padding-left: 20px;
-  padding-right:20px;
-  color:#ffffff;
-}
-
 .dark{
   padding:15px;
-  background:#35424a;
+  background-image: url(img/sw.jpg);
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
@@ -394,12 +326,9 @@ header #branding{
 
 header #branding h1{
   margin:0;
+  margin-bottom: 10px;
 }
 
-header nav{
-  float:right;
-  margin-top:10px;
-}
 
 header .highlight, header .current a{
   color:#e8491d;
@@ -428,7 +357,6 @@ header a:hover{
 #showcase p{
   font-size:20px;
 }
-
 
 
 /* Boxes */
@@ -533,7 +461,6 @@ ul#services li{
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
-
 
 footer{
   padding:20px;
@@ -692,7 +619,6 @@ footer{
   background: url("img/chess.jpg");
 }
 
-
 .card-text {
   grid-area: text;
   margin: 25px;
@@ -736,6 +662,15 @@ footer{
   position: relative;
 }
 
+#icon {
+  font-size: 32px;
+}
+
+.dark .interest
+{
+  background-image: url("img/chess.jpg");
+}
+
 /* Media Queries */
 @media(max-width: 991px){
   header #branding,
@@ -764,8 +699,6 @@ footer{
   grid-template-columns: repeat(auto-fill, minimax(50%, 1fr));
   grid-template-rows: minmax(auto, auto);
 }
-
-
 
 .container .box
 {
